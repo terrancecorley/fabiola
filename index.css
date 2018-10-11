@@ -1,0 +1,110 @@
+body {
+  background-color: lightskyblue;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.wrapper > div {
+  position: relative;
+}
+
+span {
+  font-size: 10rem;
+  letter-spacing: 5px;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #fefefe;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+img {
+  max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.overlay img {
+  z-index: 10;
+}
+
+.overlay {
+  transition: transform 0.4s, opacity 0.3s;
+}
+
+.f:hover .overlay {
+  transform: translateX(-50%) rotate(-35deg);
+  opacity: 1;
+}
+
+.a:hover .overlay {
+  transform: translateY(80%);
+  opacity: 1;
+}
+
+.b:hover .overlay {
+  transform: translateY(-40%);
+  opacity: 1;
+}
+
+.i .overlay {
+  transform: translate(18%, -5%);
+  transform-origin: center right;
+}
+
+.i:hover .overlay {
+  transform: rotate(25deg);
+  opacity: 1;
+}
+
+.o .overlay {
+  transform: translateY(60%);
+  text-align: center;
+}
+
+.o img {
+  width: 75px;
+}
+
+.o:hover .overlay {
+  transform: rotate(-35deg);
+  opacity: 1;
+}
+
+.l:hover .overlay {
+  transform: translate(20%, 50%);
+  opacity: 1;
+}
+
+.a2 .overlay {
+  transform: translate(0, 90%);
+  font-size: 5rem;
+  font-family: 'Pacifico', cursive;
+  color: rgb(192, 46, 221);
+}
+
+.a2:hover .overlay {
+  opacity: 1;
+}
